@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)",
+      "Read(//c/Program Files/**)",
+      "Read(//c/Program Files \\(x86\\)/**)",
+      "Bash(where.exe node *)",
+      "PowerShell($paths = @\\(\"C:\\\\Program Files\\\\nodejs\\\\node.exe\", \"C:\\\\Program Files \\(x86\\)\\\\nodejs\\\\node.exe\", \"$env:LOCALAPPDATA\\\\Programs\\\\nodejs\\\\node.exe\", \"$env:APPDATA\\\\npm\\\\node.exe\", \"$env:USERPROFILE\\\\AppData\\\\Roaming\\\\nvm\\\\node.exe\", \"C:\\\\nvm4w\\\\node.exe\", \"C:\\\\tools\\\\nodejs\\\\node.exe\", \"C:\\\\Users\\\\user\\\\scoop\\\\apps\\\\nodejs\\\\current\\\\node.exe\"\\); foreach \\($p in $paths\\) { if \\(Test-Path $p\\) { \"FOUND: $p\" } else { \"no:    $p\" } }; \"---PATH---\"; $env:PATH -split ';' | Where-Object { $_ -match 'node|nvm|npm' })",
+      "PowerShell($env:PATH = \"C:\\\\Users\\\\user\\\\Downloads\\\\node-extracted\\\\node-v25.9.0-win-x64;\" + $env:PATH; node --version; npm --version)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:3000\" -MaximumRedirection 0 -ErrorAction SilentlyContinue -TimeoutSec 30 } catch { $r = $_.Exception.Response }; if \\($r\\) { \"Status: $\\($r.StatusCode\\) - Location: $\\($r.Headers['Location']\\)\" }; \"---\"; try { $r2 = Invoke-WebRequest -Uri \"http://localhost:3000/fr\" -TimeoutSec 30; \"Status /fr: $\\($r2.StatusCode\\) - Length: $\\($r2.RawContent.Length\\) chars\" } catch { \"Error: $_\" })",
+      "Bash(npm run *)",
+      "PowerShell(Get-Command node -ErrorAction SilentlyContinue)",
+      "PowerShell(Test-Path \"C:\\\\Program Files\\\\nodejs\\\\npm.cmd\"; Test-Path \"$env:APPDATA\\\\npm\\\\npm.cmd\"; where.exe node 2>$null)",
+      "PowerShell($node = \"C:\\\\Users\\\\user\\\\Downloads\\\\node-extracted\\\\node-v25.9.0-win-x64\"; Set-Location \"C:\\\\Users\\\\user\\\\Downloads\\\\VTC LANDING\"; & \"$node\\\\npm.cmd\" run dev)"
+    ]
+  }
+}

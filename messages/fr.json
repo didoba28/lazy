@@ -1,0 +1,191 @@
+{
+  "common": {
+    "phone": "06 76 63 66 47",
+    "phoneE164": "+33676636647",
+    "phoneHref": "tel:+33676636647",
+    "whatsapp": "https://wa.me/33676636647?text=Bonjour%2C%20je%20souhaite%20une%20information%20sur%20vos%20services",
+    "email": "contact@tka-driver.fr",
+    "brand": "TKA driver",
+    "tagline": "Votre chauffeur privé à Paris, où vous voulez, quand vous voulez."
+  },
+  "header": {
+    "nav": {
+      "simulator": "Simulateur",
+      "packages": "Forfaits",
+      "about": "À propos",
+      "reviews": "Avis",
+      "faq": "FAQ"
+    },
+    "cta": "Réserver"
+  },
+  "hero": {
+    "h1": "Votre chauffeur privé à Paris, où vous voulez, quand vous voulez.",
+    "subtitle": "Aéroports, gares, événements, longues distances. Réservation en ligne, paiement sécurisé, ponctualité garantie.",
+    "ctaPrimary": "Simuler mon trajet",
+    "ctaSecondary": "06 76 63 66 47",
+    "trust": {
+      "rating": "4,9/5",
+      "trips": "+500 trajets",
+      "payment": "Paiement sécurisé",
+      "punctuality": "Ponctualité garantie"
+    }
+  },
+  "simulator": {
+    "title": "Simulez votre trajet",
+    "subtitle": "Tarif estimé en quelques secondes. Aller-retour, heures de pointe et nuit pris en compte.",
+    "fields": {
+      "from": "Adresse de départ",
+      "fromPlaceholder": "Ex. 12 rue de Rivoli, Paris",
+      "to": "Adresse d'arrivée",
+      "toPlaceholder": "Ex. Aéroport Charles-de-Gaulle, Roissy",
+      "date": "Date",
+      "time": "Heure",
+      "passengers": "Passagers",
+      "luggage": "Bagages",
+      "roundTrip": "Aller-retour",
+      "note": "Note pour le chauffeur (optionnel)",
+      "notePlaceholder": "Numéro de vol, étage, code immeuble..."
+    },
+    "estimate": "Estimation",
+    "allInclusive": "Toutes taxes et prise en charge incluses.",
+    "tagPeak": "tarif heure de pointe",
+    "tagNight": "tarif nuit",
+    "tagPackage": "forfait",
+    "cta": "Réserver ce trajet",
+    "errorMapbox": "Impossible de calculer le trajet. Contactez-nous au 06 76 63 66 47 pour un devis.",
+    "errorAddresses": "Veuillez saisir une adresse de départ et une adresse d'arrivée valides.",
+    "loading": "Calcul en cours…"
+  },
+  "packages": {
+    "title": "Forfaits longue distance",
+    "subtitle": "Tarifs forfaitaires, pas de mauvaise surprise.",
+    "from": "À partir de",
+    "duration": "Durée estimée",
+    "cta": "Réserver",
+    "items": {
+      "cdg": "Paris → CDG",
+      "orly": "Paris → Orly",
+      "beauvais": "Paris → Beauvais",
+      "disney": "Paris → Disneyland",
+      "deauville": "Paris → Deauville",
+      "lille": "Paris → Lille",
+      "reims": "Paris → Reims",
+      "bruxelles": "Paris → Bruxelles"
+    }
+  },
+  "why": {
+    "title": "Pourquoi nous choisir",
+    "subtitle": "L'attention au détail fait toute la différence.",
+    "items": {
+      "car": { "title": "Toyota Corolla 2021", "desc": "Berline récente, propre, climatisée." },
+      "water": { "title": "Bouteille d'eau offerte", "desc": "Une attention à chaque trajet." },
+      "chargers": { "title": "Chargeurs USB", "desc": "iPhone et Android disponibles à bord." },
+      "wifi": { "title": "Wifi à bord", "desc": "Connexion gratuite pendant le trajet." },
+      "punctual": { "title": "Ponctualité garantie", "desc": "Ou geste commercial systématique." }
+    }
+  },
+  "testimonials": {
+    "title": "Ils nous ont fait confiance",
+    "subtitle": "4,9/5 sur la base des retours clients.",
+    "items": [
+      { "name": "Camille L.", "city": "Paris 7e", "text": "Très ponctuel, voiture impeccable, conduite douce. Je recommande pour aller à CDG aux heures de pointe." },
+      { "name": "Olivier M.", "city": "Neuilly", "text": "Tidiane est arrivé en avance, il m'a aidé avec mes bagages. Service vraiment au-dessus." },
+      { "name": "Sophie R.", "city": "Paris 16e", "text": "Réservation simple en ligne, paiement clair, aucun supplément. Du sérieux." },
+      { "name": "Marc D.", "city": "Boulogne", "text": "J'utilise KT pour mes rendez-vous clients. Discret, professionnel, et toujours à l'heure." },
+      { "name": "Inès B.", "city": "Paris 11e", "text": "Trajet de nuit après un vol, j'étais rassurée. Voiture propre, eau offerte, top." },
+      { "name": "Julien T.", "city": "Versailles", "text": "Aller-retour Disneyland en famille, prix forfait correct, sièges confortables." }
+    ],
+    "todoNote": "Remplacer par de vrais avis Google Business une fois récoltés."
+  },
+  "about": {
+    "title": "À propos de Tidiane",
+    "p1": "Tidiane Kane, fondateur de TKA driver, exerce le métier de chauffeur depuis plusieurs années à Paris et en Île-de-France.",
+    "p2": "Il a fondé KT pour offrir un service de chauffeur privé accessible, sans surprise, avec un vrai standard de qualité : ponctualité, courtoisie, voiture impeccable.",
+    "p3": "Son approche : faire du trajet un moment agréable, que ce soit pour un vol matinal ou un rendez-vous important. Pas de jargon, pas de surprise sur la facture.",
+    "badges": {
+      "license": "Permis B+",
+      "card": "Carte VTC",
+      "insurance": "Assurance professionnelle"
+    }
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Comment réserver ?",
+        "a": "Simulez votre trajet en ligne, choisissez votre créneau et payez en ligne en quelques clics. Vous recevez immédiatement une confirmation par email."
+      },
+      {
+        "q": "Quels sont les modes de paiement ?",
+        "a": "Carte bancaire (Visa, Mastercard, Amex) via Stripe. Le paiement se fait à la réservation, en intégralité, en euros."
+      },
+      {
+        "q": "Puis-je annuler ma réservation ?",
+        "a": "Annulation gratuite jusqu'à 24h avant le trajet. Entre 24h et 6h avant, 50% du montant remboursé. Moins de 6h avant, le montant n'est pas remboursable. En cas de retard de vol, aucun frais ne s'applique."
+      },
+      {
+        "q": "Combien de bagages puis-je emporter ?",
+        "a": "Jusqu'à 4 bagages standard (valise cabine + valise de soute par passager) dans la Toyota Corolla. Pour des volumes plus importants, contactez-nous."
+      },
+      {
+        "q": "Que se passe-t-il si mon vol a du retard ?",
+        "a": "Nous suivons votre vol en temps réel. En cas de retard, le chauffeur s'adapte sans frais supplémentaires. Indiquez votre numéro de vol dans la note de réservation."
+      },
+      {
+        "q": "Le chauffeur attend-il en cas de retard ?",
+        "a": "15 minutes d'attente offertes pour un trajet standard, 60 minutes pour un vol. Au-delà, l'attente est facturée 0,50 €/min."
+      },
+      {
+        "q": "Couvrez-vous les longues distances et l'international ?",
+        "a": "Oui : Deauville, Lille, Reims, Bruxelles et bien d'autres destinations sur devis. Voir nos forfaits ou contactez-nous directement."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Chauffeur privé professionnel à Paris et en Île-de-France.",
+    "services": "Services",
+    "servicesItems": ["Aéroports CDG, Orly, Beauvais", "Gares parisiennes", "Événements professionnels", "Longues distances"],
+    "areas": "Zones desservies",
+    "areasItems": ["Paris intra-muros", "Île-de-France", "Normandie", "Hauts-de-France", "Belgique"],
+    "legal": "Légal",
+    "legalLinks": {
+      "cgv": "CGV",
+      "mentions": "Mentions légales",
+      "privacy": "Politique de confidentialité"
+    },
+    "contact": "Contact",
+    "evtc": "N° EVTC : à compléter",
+    "rights": "© 2026 TKA driver. Tous droits réservés."
+  },
+  "reservation": {
+    "title": "Choisissez votre créneau",
+    "summary": "Récapitulatif",
+    "from": "Départ",
+    "to": "Arrivée",
+    "date": "Date",
+    "time": "Heure",
+    "passengers": "Passagers",
+    "price": "Prix total",
+    "form": {
+      "title": "Vos coordonnées",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "submit": "Aller au paiement",
+      "submitting": "Redirection vers le paiement…",
+      "terms": "En réservant, vous acceptez nos CGV et notre politique de confidentialité."
+    },
+    "confirmation": {
+      "title": "Merci ! Votre réservation est confirmée.",
+      "lead": "Tidiane vous contactera 30 min avant le départ pour confirmer le point de prise en charge.",
+      "emailSent": "Un email de confirmation a été envoyé.",
+      "back": "Retour à l'accueil"
+    },
+    "cancellation": {
+      "title": "Paiement annulé",
+      "lead": "Aucun montant n'a été débité. Vous pouvez relancer la réservation quand vous voulez.",
+      "back": "Retour à l'accueil"
+    }
+  }
+}

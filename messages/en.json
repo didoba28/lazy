@@ -1,0 +1,191 @@
+{
+  "common": {
+    "phone": "+33 6 76 63 66 47",
+    "phoneE164": "+33676636647",
+    "phoneHref": "tel:+33676636647",
+    "whatsapp": "https://wa.me/33676636647?text=Hello%2C%20I%20would%20like%20information%20about%20your%20services",
+    "email": "contact@tka-driver.fr",
+    "brand": "TKA driver",
+    "tagline": "Your private chauffeur in Paris, wherever you want, whenever you want."
+  },
+  "header": {
+    "nav": {
+      "simulator": "Quote",
+      "packages": "Packages",
+      "about": "About",
+      "reviews": "Reviews",
+      "faq": "FAQ"
+    },
+    "cta": "Book now"
+  },
+  "hero": {
+    "h1": "Your private chauffeur in Paris, wherever you want, whenever you want.",
+    "subtitle": "Airports, train stations, events, long distances. Online booking, secure payment, guaranteed punctuality.",
+    "ctaPrimary": "Get a quote",
+    "ctaSecondary": "+33 6 76 63 66 47",
+    "trust": {
+      "rating": "4.9/5",
+      "trips": "500+ rides",
+      "payment": "Secure payment",
+      "punctuality": "Punctuality guaranteed"
+    }
+  },
+  "simulator": {
+    "title": "Get an instant quote",
+    "subtitle": "Estimated fare in seconds. Round trip, peak hours and night surcharges included.",
+    "fields": {
+      "from": "Pickup address",
+      "fromPlaceholder": "e.g. 12 rue de Rivoli, Paris",
+      "to": "Drop-off address",
+      "toPlaceholder": "e.g. Charles-de-Gaulle Airport",
+      "date": "Date",
+      "time": "Time",
+      "passengers": "Passengers",
+      "luggage": "Luggage",
+      "roundTrip": "Round trip",
+      "note": "Note for the driver (optional)",
+      "notePlaceholder": "Flight number, floor, building code..."
+    },
+    "estimate": "Estimate",
+    "allInclusive": "Taxes and pickup fee included.",
+    "tagPeak": "peak-hour rate",
+    "tagNight": "night rate",
+    "tagPackage": "package rate",
+    "cta": "Book this ride",
+    "errorMapbox": "Unable to calculate the trip. Call us at +33 6 76 63 66 47 for a quote.",
+    "errorAddresses": "Please enter a valid pickup and drop-off address.",
+    "loading": "Calculating…"
+  },
+  "packages": {
+    "title": "Long-distance packages",
+    "subtitle": "Flat fares, no surprises.",
+    "from": "From",
+    "duration": "Estimated duration",
+    "cta": "Book",
+    "items": {
+      "cdg": "Paris → CDG",
+      "orly": "Paris → Orly",
+      "beauvais": "Paris → Beauvais",
+      "disney": "Paris → Disneyland",
+      "deauville": "Paris → Deauville",
+      "lille": "Paris → Lille",
+      "reims": "Paris → Reims",
+      "bruxelles": "Paris → Brussels"
+    }
+  },
+  "why": {
+    "title": "Why choose us",
+    "subtitle": "Attention to detail makes the difference.",
+    "items": {
+      "car": { "title": "Toyota Corolla 2021", "desc": "Recent sedan, clean, air-conditioned." },
+      "water": { "title": "Complimentary water", "desc": "A small attention every ride." },
+      "chargers": { "title": "USB chargers", "desc": "iPhone and Android cables on board." },
+      "wifi": { "title": "On-board Wi-Fi", "desc": "Free connection during your ride." },
+      "punctual": { "title": "Punctuality guaranteed", "desc": "Or a goodwill gesture, every time." }
+    }
+  },
+  "testimonials": {
+    "title": "Trusted by our clients",
+    "subtitle": "4.9/5 based on customer reviews.",
+    "items": [
+      { "name": "Camille L.", "city": "Paris 7th", "text": "Very punctual, immaculate car, smooth driving. I recommend for CDG runs at peak hours." },
+      { "name": "Olivier M.", "city": "Neuilly", "text": "Tidiane arrived early, helped with my luggage. Service truly above average." },
+      { "name": "Sophie R.", "city": "Paris 16th", "text": "Easy online booking, transparent payment, no extras. Reliable." },
+      { "name": "Marc D.", "city": "Boulogne", "text": "I use KT for client meetings. Discreet, professional, always on time." },
+      { "name": "Inès B.", "city": "Paris 11th", "text": "Late-night ride after a flight, I felt safe. Clean car, water offered, perfect." },
+      { "name": "Julien T.", "city": "Versailles", "text": "Round trip to Disneyland with the family, fair flat rate, comfortable seats." }
+    ],
+    "todoNote": "Replace with real Google Business reviews once collected."
+  },
+  "about": {
+    "title": "About Tidiane",
+    "p1": "Tidiane Kane, founder of TKA driver, has been driving in Paris and the Île-de-France region for years.",
+    "p2": "He founded KT to offer an accessible private chauffeur service with no surprises and real quality standards: punctuality, courtesy, immaculate car.",
+    "p3": "His approach: turn every ride into a pleasant moment, whether for an early flight or an important meeting. No jargon, no hidden fees.",
+    "badges": {
+      "license": "B+ License",
+      "card": "VTC Card",
+      "insurance": "Professional insurance"
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "How do I book?",
+        "a": "Get a quote online, choose your time slot and pay in a few clicks. You receive an instant confirmation by email."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Credit card (Visa, Mastercard, Amex) via Stripe. Full payment is taken at booking, in euros."
+      },
+      {
+        "q": "Can I cancel my booking?",
+        "a": "Free cancellation up to 24h before pickup. Between 24h and 6h before, 50% refunded. Less than 6h before, no refund. In case of flight delay, no fee applies."
+      },
+      {
+        "q": "How much luggage can I bring?",
+        "a": "Up to 4 standard pieces (cabin + checked per passenger) in the Toyota Corolla. For larger volumes, contact us."
+      },
+      {
+        "q": "What if my flight is delayed?",
+        "a": "We track your flight in real time. In case of delay, the driver adapts at no extra cost. Add your flight number to the booking note."
+      },
+      {
+        "q": "Does the driver wait if I'm late?",
+        "a": "15 minutes of free wait time on standard pickups, 60 minutes on flights. Beyond that, waiting is billed at €0.50/min."
+      },
+      {
+        "q": "Do you cover long distances and international?",
+        "a": "Yes: Deauville, Lille, Reims, Brussels and many more on quote. See our packages or get in touch."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Professional private chauffeur in Paris and Île-de-France.",
+    "services": "Services",
+    "servicesItems": ["CDG, Orly, Beauvais airports", "Paris train stations", "Business events", "Long distances"],
+    "areas": "Service area",
+    "areasItems": ["Paris", "Île-de-France", "Normandy", "Hauts-de-France", "Belgium"],
+    "legal": "Legal",
+    "legalLinks": {
+      "cgv": "Terms",
+      "mentions": "Legal notice",
+      "privacy": "Privacy policy"
+    },
+    "contact": "Contact",
+    "evtc": "EVTC #: to be completed",
+    "rights": "© 2026 TKA driver. All rights reserved."
+  },
+  "reservation": {
+    "title": "Choose your time slot",
+    "summary": "Summary",
+    "from": "Pickup",
+    "to": "Drop-off",
+    "date": "Date",
+    "time": "Time",
+    "passengers": "Passengers",
+    "price": "Total",
+    "form": {
+      "title": "Your details",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "phone": "Phone",
+      "submit": "Proceed to payment",
+      "submitting": "Redirecting to payment…",
+      "terms": "By booking, you accept our terms and privacy policy."
+    },
+    "confirmation": {
+      "title": "Thank you! Your booking is confirmed.",
+      "lead": "Tidiane will contact you 30 min before pickup to confirm the location.",
+      "emailSent": "A confirmation email has been sent.",
+      "back": "Back to home"
+    },
+    "cancellation": {
+      "title": "Payment cancelled",
+      "lead": "No amount has been charged. You can restart the booking whenever you want.",
+      "back": "Back to home"
+    }
+  }
+}
