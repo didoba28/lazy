@@ -18,8 +18,6 @@ export default function Footer() {
           <div>
             <p className="font-display text-lg font-bold">TKA driver</p>
             <p className="mt-3 text-sm text-white/70">{t('tagline')}</p>
-            {/* TODO Tidiane : compléter le numéro EVTC ci-dessous */}
-            <p className="mt-4 text-xs text-white/50">{t('evtc')}</p>
           </div>
 
           <div>
