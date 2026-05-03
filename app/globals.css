@@ -106,6 +106,31 @@ body {
   @apply border-t border-brand/10;
 }
 
+/* Effets de fond ultra-subtils */
+.section-glow-blue {
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 0%, rgb(30 73 118 / 0.04) 0%, transparent 70%);
+}
+
+.section-glow-gold {
+  background:
+    radial-gradient(ellipse 60% 40% at 50% 100%, rgb(201 169 97 / 0.05) 0%, transparent 65%);
+}
+
+/* Bordure animée très légère sur la carte simulateur */
+@keyframes border-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgb(30 73 118 / 0), 0 1px 2px rgb(15 42 71 / 0.04), 0 6px 28px -6px rgb(15 42 71 / 0.14), inset 0 1px 0 rgba(255,255,255,0.65); }
+  50% { box-shadow: 0 0 0 3px rgb(30 73 118 / 0.06), 0 1px 2px rgb(15 42 71 / 0.04), 0 6px 28px -6px rgb(15 42 71 / 0.14), inset 0 1px 0 rgba(255,255,255,0.65); }
+}
+
+.fancy-shadow-pulse {
+  animation: border-glow 4s ease-in-out infinite;
+  box-shadow:
+    0 1px 2px rgb(15 42 71 / 0.04),
+    0 6px 28px -6px rgb(15 42 71 / 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
 @media print {
   body { background: white; }
 }

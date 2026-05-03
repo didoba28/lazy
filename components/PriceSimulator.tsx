@@ -123,8 +123,12 @@ export default function PriceSimulator() {
   }
 
   return (
-    <section id="simulateur" className="bg-white section-pad">
-      <div className="container-tight">
+    <section id="simulateur" className="relative bg-white section-pad section-glow-blue">
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="absolute -right-20 top-10 h-64 w-64 rounded-full bg-brand-gold/[0.03] blur-3xl" />
+        <div className="absolute -left-20 bottom-10 h-48 w-48 rounded-full bg-brand-accent/[0.04] blur-3xl" />
+      </div>
+      <div className="container-tight relative">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-3xl font-bold text-brand sm:text-4xl">
             {t('title')}
@@ -132,7 +136,7 @@ export default function PriceSimulator() {
           <p className="mt-3 text-base text-ink/70">{t('subtitle')}</p>
         </div>
 
-        <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-brand/10 bg-white p-6 fancy-shadow sm:p-8">
+        <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-brand/10 bg-white p-6 fancy-shadow-pulse sm:p-8">
           <div className="grid gap-5">
             <div className="grid gap-2">
               <Label htmlFor="from">{t('fields.from')}</Label>
@@ -160,7 +164,7 @@ export default function PriceSimulator() {
               />
             </div>
 
-            <div className="grid gap-5 sm:grid-cols-2">
+            <div className="grid grid-cols-2 gap-3">
               <div className="grid gap-2">
                 <Label htmlFor="date">{t('fields.date')}</Label>
                 <Input
@@ -182,7 +186,7 @@ export default function PriceSimulator() {
               </div>
             </div>
 
-            <div className="grid gap-5 sm:grid-cols-2">
+            <div className="grid grid-cols-2 gap-3">
               <div className="grid gap-2">
                 <Label>{t('fields.passengers')}</Label>
                 <Select value={passengers} onValueChange={setPassengers}>

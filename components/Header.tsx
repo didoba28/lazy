@@ -68,13 +68,17 @@ export default function Header() {
           </Button>
         </div>
 
-        <button
-          aria-label="Menu"
-          className="rounded-md border border-brand/10 p-2 text-brand md:hidden"
-          onClick={() => setOpen((o) => !o)}
-        >
-          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
+        {/* Language switcher toujours visible sur mobile */}
+        <div className="flex items-center gap-2 md:hidden">
+          <LanguageSwitcher />
+          <button
+            aria-label="Menu"
+            className="rounded-md border border-brand/10 p-2 text-brand"
+            onClick={() => setOpen((o) => !o)}
+          >
+            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
       </div>
 
       {open && (
