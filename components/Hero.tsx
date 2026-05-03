@@ -117,10 +117,10 @@ export default function Hero() {
           >
             <div className="relative h-full w-full bg-white">
               <Image
-                src="/Toyota carolla.png"
+                src="/NV.png"
                 alt="Toyota Corolla 2021 — KT Chauffeur"
                 fill
-                className="object-cover object-center scale-110"
+                className="object-cover object-center"
                 priority
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-brand/75 to-transparent px-5 pb-4 pt-10">

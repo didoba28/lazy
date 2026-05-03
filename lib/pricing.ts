@@ -9,11 +9,11 @@ import { PACKAGES, matchPackage } from './packages';
  * en charge.
  */
 export const PRICING = {
-  PRISE_EN_CHARGE: 5,
+  PRISE_EN_CHARGE: 3,
   TARIF_KM: 2,
   MAJORATION_HEURE_POINTE: 0.2,
   MAJORATION_NUIT: 0.15,
-  PRIX_MINIMUM: 25,
+  PRIX_MINIMUM: 10,
 } as const;
 
 export type TripParams = {
