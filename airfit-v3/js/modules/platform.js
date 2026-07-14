@@ -466,7 +466,7 @@ export function buildPlatform(model, opts = {}) {
       ${dimFront(W, D, model.dims.w)}
       ${dimSide(W, D, model.dims.d)}
       ${dimHeight(dp[0], dp[1], dp[2], model.dims.h)}
-      ${callout(axU, ayV, 0, 28, dyArea, model.dims.area, 'SOL SPORTIF EPDM')}
+      ${callout(axU, ayV, 0, -190, dyArea, model.dims.area, 'SOL SPORTIF EPDM')}
       ${callout(mp[0], mp[1], mp[2], 56, -26, model.dims.mat)}
       ${cross(minX + 30, minY + 26)}${cross(maxX - 30, minY + 26)}
       ${cross(minX + 30, maxY - 26)}${cross(maxX - 30, maxY - 26)}
