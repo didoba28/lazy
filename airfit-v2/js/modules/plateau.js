@@ -231,11 +231,12 @@ function bench(x, y, len, depth, h, s, T) {
   );
 }
 
-/* Gradins bas : marches successives le long du bord y=0 */
+/* Gradins bas : marches successives posées sur la dalle,
+   la plus haute au fond (y le plus petit), descendant vers l'avant. */
 function bleachers(x, y, len, steps, s, T) {
   let g = '';
-  for (let i = steps - 1; i >= 0; i--) {
-    g += bench(x, y - (i + 1) * 0.9, len, 0.9, 0.38 * (i + 1), s, T);
+  for (let i = 0; i < steps; i++) {
+    g += bench(x, y + i * 0.95, len, 0.95, 0.4 * (steps - i), s, T);
   }
   return g;
 }
@@ -321,7 +322,7 @@ function buildModel(model, s, T, uid) {
     });
     // séparation des deux zones
     g += ln(pr(10, 0.7, 0.02, s), pr(10, d - 0.7, 0.02, s), `stroke="${T.accent}" stroke-width="1.6" stroke-dasharray="7 6"`);
-    g += bleachers(11.6, 0.02, 6.4, 2, s, T);
+    g += bleachers(11.8, 0.9, 6.4, 2, s, T);
     g += bench(1.2, 8.55, 2.4, 0.75, 0.42, s, T);
     g += parallelBars(1.4, 1.6, 3.0, 1.15, 1.25, s, T);
     g += rings(15.6, 3.4, 2.7, 2.75, s, T);

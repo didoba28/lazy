@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AirFit — Plateaux sportifs clé en main pour les collectivités</title>
+  <meta name="description" content="AirFit conçoit, fabrique et installe des plateaux sportifs clé en main pour les communes et collectivités. Trois modèles — Compact, Signature, Arena — pour transformer durablement vos espaces publics.">
+  <link rel="preload" href="fonts/barlow-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/barlow-semi-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23001231'/%3E%3Cpath d='M8 23 16 8l8 15h-4.4L16 16.4 12.4 23Z' fill='%2301549D'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip-link" href="#plateaux">Aller au contenu</a>
+
+  <header class="nav" id="nav">
+    <a class="nav-logo" href="#hero" aria-label="AirFit — retour en haut de page">AIRFIT<span>Plateaux sportifs</span></a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#plateaux">Les plateaux</a>
+      <a href="#realisations">Réalisations</a>
+      <a class="btn btn-solid nav-cta" href="#contact">Imaginer mon projet</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= 1 · HERO ================= -->
+    <section class="hero" id="hero">
+      <div class="hero-halo" id="hero-halo" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy" id="hero-copy">
+          <p class="tech-label hero-kicker">Plateau sportif · Réf. AF-2026</p>
+          <h1 id="hero-title">
+            <span class="line"><span>Le sport devient</span></span>
+            <span class="line"><span>un <em>lieu de vie</em>.</span></span>
+          </h1>
+          <p class="hero-sub">Des plateaux sportifs clé en main, conçus pour transformer durablement vos espaces.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-solid" href="#plateaux">Découvrir les plateaux <span class="arr" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="#realisations">Voir nos réalisations</a>
+          </div>
+          <div class="hero-meta">
+            <span class="dot-sep">Conception&nbsp;&nbsp;•&nbsp;&nbsp;Fabrication&nbsp;&nbsp;•&nbsp;&nbsp;Installation</span>
+            <span class="hero-trust"><b>+550</b> installations en France</span>
+          </div>
+        </div>
+        <div class="hero-stage">
+          <div class="hero-platform" id="hero-platform"></div>
+        </div>
+      </div>
+      <div class="hero-scroll" id="hero-scroll" aria-hidden="true">
+        <span>Explorer</span>
+        <span class="wire"></span>
+      </div>
+    </section>
+
+    <!-- ================= 2 · SÉLECTEUR ================= -->
+    <section class="selector" id="plateaux">
+      <div class="selector-pin" id="selector-pin">
+        <div class="selector-head">
+          <div>
+            <p class="tech-label">Gamme 2026 — trois modèles</p>
+            <h2>Un plateau. Trois façons d’activer votre territoire.</h2>
+          </div>
+          <div class="seg-wrap">
+            <div class="seg" role="group" aria-label="Choix du modèle de plateau" id="seg">
+              <button type="button" data-i="0" aria-pressed="true"><span class="seg-n" aria-hidden="true">01</span>Compact</button>
+              <button type="button" data-i="1" aria-pressed="false"><span class="seg-n" aria-hidden="true">02</span>Signature</button>
+              <button type="button" data-i="2" aria-pressed="false"><span class="seg-n" aria-hidden="true">03</span>Arena</button>
+            </div>
+            <div class="view-toggle" role="group" aria-label="Mode d’affichage du plateau" id="view-toggle">
+              <button type="button" data-view="product" aria-pressed="true">Vue produit</button>
+              <button type="button" data-view="installed" aria-pressed="false">Vue installée</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="selector-stage-row">
+          <div class="stage" id="stage" tabindex="0" role="group"
+               aria-roledescription="sélecteur de modèle"
+               aria-label="Visualisation du plateau. Utilisez les flèches gauche et droite pour changer de modèle.">
+            <!-- plateaux injectés par JS -->
+          </div>
+          <aside class="stage-info" id="stage-info" aria-live="polite">
+            <div class="counter-row">
+              <div class="counter-instrument" aria-hidden="true">
+                <span class="cur" id="counter-cur">01</span><span class="tot">/ 03</span>
+              </div>
+              <div class="counter-ticks" id="counter-ticks" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+            </div>
+            <div class="info-fields" id="info-fields">
+              <h3 class="p-name" id="p-name">Compact</h3>
+              <p class="p-tag" id="p-tag"></p>
+              <ul class="p-specs">
+                <li><span class="k">Surface</span><span class="v" id="p-surface"></span></li>
+                <li><span class="k">Capacité</span><span class="v" id="p-users"></span></li>
+                <li><span class="k">Structure</span><span class="v">Acier S235 thermolaqué</span></li>
+              </ul>
+              <div class="p-practices" id="p-practices"></div>
+            </div>
+            <a class="btn btn-navy" id="p-cta" href="#contact">Découvrir ce plateau <span class="arr" aria-hidden="true">→</span></a>
+          </aside>
+        </div>
+
+        <div class="stage-tools">
+          <span class="drag-hint" aria-hidden="true">
+            <svg viewBox="0 0 34 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 1 1 6l4 5M29 1l4 5-4 5M1 6h32"/></svg>
+            Glisser pour changer de modèle
+          </span>
+          <div class="stage-arrows">
+            <button type="button" class="stage-arrow" id="model-prev" aria-label="Modèle précédent">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10.5 2 4.5 8l6 6"/></svg>
+            </button>
+            <button type="button" class="stage-arrow" id="model-next" aria-label="Modèle suivant">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5.5 2l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4 · AVANT / APRÈS ================= -->
+    <section class="compare-section tech-grid-bg" id="transformation">
+      <div class="section-head">
+        <p class="tech-label">Transformation</p>
+        <div class="head-row">
+          <h2>D’un espace vide à un lieu de vie.</h2>
+          <span class="counter" aria-hidden="true">FIG. <b>02</b> / 06</span>
+        </div>
+        <p class="lead">Le même terrain, six à neuf semaines plus tard. Glissez la règle pour mesurer la différence entre une parcelle oubliée et un équipement qui rassemble.</p>
+      </div>
+      <div class="compare-wrap">
+        <div class="compare corners" id="compare">
+          <span class="c2" aria-hidden="true"></span>
+          <div class="pane pane-before" id="pane-before"></div>
+          <div class="pane pane-after" id="pane-after"></div>
+          <span class="compare-tag before" aria-hidden="true">Avant — terrain nu</span>
+          <span class="compare-tag after" aria-hidden="true">Après — plateau AirFit</span>
+          <div class="compare-handle" id="compare-handle" role="slider" tabindex="0"
+               aria-label="Comparateur avant après, pourcentage de la vue « après » affiché"
+               aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-orientation="horizontal">
+            <span class="rule" aria-hidden="true"></span>
+            <span class="grip" aria-hidden="true">
+              <svg viewBox="0 0 22 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 1 1 7l5 6M16 1l5 6-5 6"/></svg>
+            </span>
+            <span class="val" id="compare-val" aria-hidden="true">50 %</span>
+          </div>
+        </div>
+        <div class="compare-caption">
+          <span><b>6 à 9 semaines</b> entre l’étude du besoin et l’ouverture au public.</span>
+          <span>Glissez la règle, ou utilisez les flèches du clavier.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 5 · TIMELINE CLÉ EN MAIN ================= -->
+    <section class="process" id="methode">
+      <div class="section-head on-dark">
+        <p class="tech-label">Protocole AirFit — 01 → 06</p>
+        <div class="head-row">
+          <h2>Une solution réellement clé en main.</h2>
+          <span class="counter" aria-hidden="true">FIG. <b>03</b> / 06</span>
+        </div>
+        <p class="lead">Un seul interlocuteur, six étapes maîtrisées. Vous décidez, nous livrons un lieu prêt à vivre.</p>
+      </div>
+      <div class="tl" id="tl">
+        <div class="tl-rail" aria-hidden="true"><i class="tl-fill" id="tl-fill"></i></div>
+        <!-- étapes injectées par JS -->
+      </div>
+    </section>
+
+    <!-- ================= 6 · USAGES ================= -->
+    <section class="usages tech-grid-bg" id="usages">
+      <div class="section-head">
+        <p class="tech-label">Publics &amp; usages</p>
+        <div class="head-row">
+          <h2>Des usages pour toutes les générations.</h2>
+          <span class="counter" aria-hidden="true">FIG. <b>04</b> / 06</span>
+        </div>
+        <p class="lead">Un plateau AirFit n’est pas réservé aux sportifs : il est dimensionné pour la motricité des enfants comme pour l’équilibre des aînés.</p>
+      </div>
+      <div class="usage-flow" id="usage-flow">
+        <!-- cartes injectées par JS -->
+      </div>
+    </section>
+
+    <!-- ================= 7 · CHIFFRES XXL ================= -->
+    <section class="figures" id="chiffres" aria-label="AirFit en chiffres">
+      <div class="figure-panel tech-grid-bg">
+        <span class="figure-index counter" aria-hidden="true"><b>01</b> / 03</span>
+        <p class="tech-label figure-label">Installations livrées</p>
+        <p class="figure-value"><span class="sign">+</span><span class="odo" data-odo="550" aria-label="550">550</span></p>
+        <p class="figure-caption">Plateaux conçus, fabriqués et installés partout en France depuis 2012.</p>
+      </div>
+      <div class="figure-panel tech-grid-bg">
+        <span class="figure-index counter" aria-hidden="true"><b>02</b> / 03</span>
+        <p class="tech-label figure-label">Utilisateurs chaque année</p>
+        <p class="figure-value"><span class="sign">+</span><span class="odo" data-odo="3" aria-label="3">3</span><span class="unit">M</span></p>
+        <p class="figure-caption">Trois millions de passages annuels mesurés sur l’ensemble du parc installé.</p>
+      </div>
+      <div class="figure-panel tech-grid-bg">
+        <span class="figure-index counter" aria-hidden="true"><b>03</b> / 03</span>
+        <p class="tech-label figure-label">Communes satisfaites</p>
+        <p class="figure-value"><span class="odo" data-odo="98" aria-label="98">98</span><span class="unit">%</span></p>
+        <p class="figure-caption">Des collectivités équipées recommandent AirFit à une commune voisine.</p>
+      </div>
+    </section>
+
+    <!-- ================= 8 · RÉALISATIONS ================= -->
+    <section class="works" id="realisations">
+      <div class="works-head-inner">
+        <div>
+          <p class="tech-label">Réalisations — France entière</p>
+          <h2>Ils ont déjà activé leur territoire.</h2>
+        </div>
+        <div class="works-filters" role="group" aria-label="Filtrer les réalisations" id="works-filters">
+          <button type="button" data-f="all" aria-pressed="true">Tous</button>
+          <button type="button" data-f="compact" aria-pressed="false">Compact</button>
+          <button type="button" data-f="signature" aria-pressed="false">Signature</button>
+          <button type="button" data-f="arena" aria-pressed="false">Arena</button>
+        </div>
+      </div>
+      <div class="works-viewport" id="works-viewport">
+        <div class="works-track" id="works-track">
+          <!-- panneaux injectés par JS -->
+        </div>
+        <div class="works-progress" aria-hidden="true"><i id="works-progress-fill"></i></div>
+      </div>
+    </section>
+
+    <!-- ================= 9 · CTA FINAL ================= -->
+    <section class="cta-final" id="contact">
+      <div class="cta-halo" aria-hidden="true"></div>
+      <div class="cta-inner" id="cta-inner">
+        <p class="tech-label">Votre commune, notre prochain plan</p>
+        <h2>Et si le prochain lieu de vie était chez&nbsp;vous&nbsp;?</h2>
+        <a class="btn btn-white" href="mailto:contact@airfit.fr?subject=Imaginer%20mon%20projet%20AirFit">Imaginer mon projet <span class="arr" aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= 10 · FOOTER ================= -->
+  <footer class="footer">
+    <span><b>AIRFIT</b> — Conception, fabrication &amp; installation de plateaux sportifs · France</span>
+    <nav aria-label="Liens de bas de page">
+      <a href="#plateaux">Les plateaux</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="mailto:contact@airfit.fr">contact@airfit.fr</a>
+    </nav>
+    <span>© 2026 AirFit — Tous droits réservés</span>
+  </footer>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

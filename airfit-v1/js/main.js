@@ -54,6 +54,37 @@ initKeyturn();
 initCounters();
 initGallery();
 
+/* ---------- Reveals génériques + CTA final ---------- */
+if (MOTION) {
+  document.querySelectorAll('.transform-section .section-intro, .gens-section .section-intro').forEach((intro) => {
+    gsap.from(intro.children, {
+      opacity: 0, y: 44, stagger: 0.08,
+      scrollTrigger: { trigger: intro, start: 'top 78%', end: 'top 44%', scrub: 0.5 }
+    });
+  });
+
+  gsap.utils.toArray('.gens-tile').forEach((tile, i) => {
+    gsap.from(tile, {
+      opacity: 0, y: 60, scale: 0.97,
+      scrollTrigger: { trigger: tile, start: 'top 88%', end: 'top 62%', scrub: 0.5 }
+    });
+  });
+
+  // CTA cinématographique : la lumière monte, le titre se dévoile ligne par ligne
+  gsap.from('.cta-light', {
+    opacity: 0, scale: 0.5,
+    scrollTrigger: { trigger: '.cta-section', start: 'top 75%', end: 'center center', scrub: 0.6 }
+  });
+  gsap.from('.cta-title .line-in', {
+    yPercent: 112, stagger: 0.12, ease: 'power3.out',
+    scrollTrigger: { trigger: '.cta-section', start: 'top 62%', end: 'top 20%', scrub: 0.6 }
+  });
+  gsap.from('.cta-inner .btn', {
+    opacity: 0, y: 30,
+    scrollTrigger: { trigger: '.cta-section', start: 'top 40%', end: 'top 12%', scrub: 0.6 }
+  });
+}
+
 /* Recalage des triggers une fois les fonts chargées (hauteurs stables) */
 if (document.fonts?.ready) document.fonts.ready.then(() => ScrollTrigger.refresh());
 window.addEventListener('load', () => ScrollTrigger.refresh());

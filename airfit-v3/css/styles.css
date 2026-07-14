@@ -369,6 +369,12 @@ ul { list-style: none; }
   fill: currentColor;
 }
 .platform-svg .dim-t--sub { font-family: var(--font); font-weight: 500; font-size: 9.5px; letter-spacing: .22em; opacity: .75; }
+/* sur petit écran, le SVG rétrécit : on grossit les cotes en unités utilisateur */
+@media (max-width: 700px) {
+  .platform-svg .dim-t { font-size: 21px; }
+  .platform-svg .dim-t--sub { font-size: 13px; }
+  .platform-svg .dim { stroke-width: 1.5; }
+}
 .platform-svg .reg-cross line { stroke: currentColor; stroke-width: 1; opacity: .55; }
 .hero-platform { color: rgba(229, 230, 233, .85); }
 
@@ -500,6 +506,19 @@ ul { list-style: none; }
   cursor: grab;
 }
 .stage:active { cursor: grabbing; }
+/* halo lumineux derrière le plateau — évolue selon le modèle */
+.stage::before {
+  content: '';
+  position: absolute;
+  inset: 4% -4%;
+  background: radial-gradient(closest-side, rgba(1, 84, 157, .17), rgba(1, 84, 157, .05) 58%, transparent 74%);
+  transition: transform .9s ease, opacity .9s ease;
+  transform: scale(.85);
+  opacity: .7;
+  pointer-events: none;
+}
+.selector[data-model="signature"] .stage::before { transform: scale(1); opacity: .9; }
+.selector[data-model="arena"] .stage::before { transform: scale(1.14); opacity: 1; }
 .stage-platform {
   position: absolute;
   inset: 0;
@@ -861,7 +880,7 @@ ul { list-style: none; }
 .tl-rail {
   position: absolute;
   top: 0; bottom: 0;
-  left: calc(var(--pad-x) + 39px);
+  left: calc(var(--pad-x) + 17px);
   width: 2px;
   background: rgba(229, 230, 233, .14);
 }
@@ -871,13 +890,13 @@ ul { list-style: none; }
   width: 100%; height: 100%;
   background: linear-gradient(to bottom, var(--blue), var(--blue-40));
   transform-origin: top;
-  transform: scaleY(var(--p, 0));
+  transform: scaleY(1); /* visible par défaut ; animé par JS si motion OK */
 }
 .tl-step {
   position: relative;
   display: grid;
-  grid-template-columns: 80px minmax(0, 1fr);
-  gap: clamp(18px, 4vw, 54px);
+  grid-template-columns: 34px 90px minmax(0, 1fr);
+  gap: clamp(14px, 3vw, 40px);
   padding: clamp(30px, 5vh, 56px) 0;
 }
 .tl-step + .tl-step { border-top: 1px solid rgba(229,230,233,.08); }
@@ -894,13 +913,13 @@ ul { list-style: none; }
 .tl-step.is-active .tl-num { color: var(--blue-40); -webkit-text-stroke-color: transparent; }
 .tl-node {
   position: absolute;
-  left: 39px;
-  top: calc(clamp(30px, 5vh, 56px) + 10px);
+  left: 18px;
+  top: calc(clamp(30px, 5vh, 56px) + 16px);
   width: 11px; height: 11px;
   border-radius: 50%;
   background: var(--navy);
   border: 2px solid rgba(127,168,209,.5);
-  transform: translateX(-4.5px);
+  transform: translateX(-50%);
   transition: background .4s ease, box-shadow .4s ease, border-color .4s ease;
 }
 .tl-step.is-active .tl-node { background: var(--blue-40); border-color: var(--blue-40); box-shadow: 0 0 0 7px rgba(1,84,157,.28); }
@@ -918,10 +937,10 @@ ul { list-style: none; }
   display: block; margin-bottom: 8px;
 }
 @media (max-width: 700px) {
-  .tl-rail { left: calc(var(--pad-x) + 24px); }
-  .tl-node { left: 24px; }
-  .tl-step { grid-template-columns: 52px minmax(0, 1fr); }
-  .tl-body { padding-left: 10px; }
+  .tl-rail { left: calc(var(--pad-x) + 10px); }
+  .tl-node { left: 11px; }
+  .tl-step { grid-template-columns: 22px 52px minmax(0, 1fr); }
+  .tl-body { padding-left: 0; }
 }
 
 /* ============================================================
@@ -1197,8 +1216,12 @@ ul { list-style: none; }
   width: 100%;
   background: var(--blue-40);
   transform-origin: left;
-  transform: scaleX(var(--p, 0));
+  transform: scaleX(0);
 }
+/* repli sans épinglage (mobile, ou reduced-motion sur desktop) */
+.works-viewport.no-pin { overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+.works-viewport.no-pin .works-progress { display: none; }
+.works-viewport.no-pin .work-panel { scroll-snap-align: center; }
 @media (max-width: 1023px) {
   .works-viewport { overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
   .works-viewport::-webkit-scrollbar { display: none; }

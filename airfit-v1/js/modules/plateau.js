@@ -20,15 +20,17 @@ function pt(x, y, z = 0) {
    Primitives d'agrès
    -------------------------------------------------------------------------- */
 
-/** Poteau vertical avec platine au sol et micro-ombre */
+/** Poteau vertical avec platine au sol et micro-ombre.
+    NB : pas de dégradé objectBoundingBox ici — une ligne verticale a une
+    bbox de largeur nulle et le paint serait ignoré. Teinte pleine + rehaut. */
 function post(x, y, h, w = 2.6) {
   const [bx, by] = P(x, y, 0);
   const [tx, ty] = P(x, y, h);
   return `
     <ellipse cx="${bx}" cy="${by + 0.6}" rx="${w * 1.7}" ry="${w * 0.7}" fill="#001231" opacity="0.5"/>
     <line x1="${bx}" y1="${by}" x2="${tx}" y2="${ty}" stroke="#08234A" stroke-width="${w + 1.3}" stroke-linecap="round"/>
-    <line x1="${bx}" y1="${by}" x2="${tx}" y2="${ty}" stroke="url(#GRAD-post)" stroke-width="${w}" stroke-linecap="round"/>
-    <line x1="${bx - w * 0.22}" y1="${by - 1}" x2="${tx - w * 0.22}" y2="${ty + 1}" stroke="#FFFFFF" stroke-width="${w * 0.28}" stroke-linecap="round" opacity="0.75"/>`;
+    <line x1="${bx}" y1="${by}" x2="${tx}" y2="${ty}" stroke="#C5D5E7" stroke-width="${w}" stroke-linecap="round"/>
+    <line x1="${bx - w * 0.22}" y1="${by - 1.5}" x2="${tx - w * 0.22}" y2="${ty + 1.5}" stroke="#FFFFFF" stroke-width="${w * 0.32}" stroke-linecap="round" opacity="0.85"/>`;
 }
 
 /** Barre horizontale entre deux points du plan, à hauteur z */
@@ -48,9 +50,9 @@ function rings(x1, y1, x2, y2, z, drop = 7) {
     const [tx, ty] = P(x, y, z);
     const ry = ty + drop;
     s += `
-      <line x1="${tx}" y1="${ty}" x2="${tx}" y2="${ry}" stroke="#E5E6E9" stroke-width="0.9" opacity="0.9"/>
-      <circle cx="${tx}" cy="${ry + 2.6}" r="2.7" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
-      <circle cx="${tx}" cy="${ry + 2.6}" r="2.7" fill="none" stroke="#01549D" stroke-width="0.6" opacity="0.5"/>`;
+      <line x1="${tx}" y1="${ty}" x2="${tx}" y2="${ry}" stroke="#E5E6E9" stroke-width="1" opacity="0.9"/>
+      <circle cx="${tx}" cy="${ry + 3}" r="3.2" fill="none" stroke="#FFFFFF" stroke-width="1.6"/>
+      <circle cx="${tx}" cy="${ry + 3}" r="3.2" fill="none" stroke="#01549D" stroke-width="0.7" opacity="0.5"/>`;
   });
   return s;
 }
@@ -205,7 +207,7 @@ const MODELS = {
     const W = 142, D = 102, T = 10;
     let eq = '';
     eq += pullupRig(18, 14, 1, 0, 4, [34, 27, 22], 24);         // rig 3 hauteurs
-    eq += gantry(112, 16, 130, 40, 36);                         // portique + anneaux
+    eq += gantry(102, 24, 134, 24, 36);                         // portique + anneaux
     eq += bench(96, 60, 14, 10, 7);                             // box plyo
     eq += parallelBars(24, 62, 36, 10, 14);                     // barres parallèles
     eq += bench(118, 74, 20, 8, 5);                             // banc
@@ -225,7 +227,7 @@ const MODELS = {
     let eq = '';
     eq += bleachers(112, 6, 80, 11, 2);                          // gradins bas au fond
     eq += pullupRig(16, 16, 1, 0, 5, [36, 29, 23, 29], 22);      // grand rig
-    eq += gantry(160, 52, 184, 74, 38);                          // portique + anneaux
+    eq += gantry(148, 58, 184, 58, 38);                          // portique + anneaux
     eq += bench(128, 52, 15, 10, 7);                             // box plyo
     eq += parallelBars(24, 66, 40, 10, 14);                      // barres parallèles
     eq += bench(84, 92, 22, 8, 5);                               // bancs
@@ -267,6 +269,8 @@ export function plateauSVG(model = 'signature') {
 
   const [hx, hy] = P(W / 2, D / 2, -T);
   const topClip = `${pt(0, 0)} ${pt(W, 0)} ${pt(W, D)} ${pt(0, D)}`;
+  // silhouette du monolithe (dalle + épaisseur) : le reflet ne balaye que lui
+  const bodyClip = `${pt(0, 0)} ${pt(W, 0)} ${pt(W, 0, -T)} ${pt(W, D, -T)} ${pt(0, D, -T)} ${pt(0, D, 0)}`;
 
   return `
 <svg class="plateau-svg" viewBox="${minX.toFixed(0)} ${minY.toFixed(0)} ${vbW.toFixed(0)} ${vbH.toFixed(0)}"
@@ -285,10 +289,6 @@ export function plateauSVG(model = 'signature') {
     <linearGradient id="${id}-side-f" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#062A58"/>
       <stop offset="1" stop-color="#011637"/>
-    </linearGradient>
-    <linearGradient id="GRAD-post" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F4F6F8"/>
-      <stop offset="1" stop-color="#9BB9D6"/>
     </linearGradient>
     <linearGradient id="GRAD-bar" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#C9D9EA"/>
@@ -310,11 +310,11 @@ export function plateauSVG(model = 'signature') {
     </radialGradient>
     <linearGradient id="${id}-sheen" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.16"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.22"/>
       <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
     </linearGradient>
     <clipPath id="${id}-topclip"><polygon points="${topClip}"/></clipPath>
-    <clipPath id="${id}-body"><rect x="${minX}" y="${minY}" width="${vbW}" height="${vbH - 30}"/></clipPath>
+    <clipPath id="${id}-body"><polygon points="${bodyClip}"/></clipPath>
   </defs>
 
   <!-- Halo lumineux sous le plateau -->

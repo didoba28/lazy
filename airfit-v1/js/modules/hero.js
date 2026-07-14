@@ -7,7 +7,9 @@ import { MOTION, sweepSheen } from './motion.js';
 
 export function initHero() {
   const heroPlateau = document.getElementById('heroPlateau');
-  heroPlateau.innerHTML = plateauSVG('signature');
+  // Le hero présente le Compact : c'est lui que l'on retrouve en premier
+  // dans le sélecteur (continuité hero -> sélecteur, puis crescendo 01→03).
+  heroPlateau.innerHTML = plateauSVG('compact');
   const svg = heroPlateau.querySelector('svg');
 
   if (!MOTION) return; // contenu visible d'office, aucune animation
