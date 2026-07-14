@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AirFit — Le sport devient un lieu de vie</title>
+  <meta name="description" content="AirFit conçoit des plateaux sportifs clé en main qui transforment un espace oublié en destination incontournable. Collectivités, écoles, campings, entreprises.">
+  <meta property="og:title" content="AirFit — Le sport devient un lieu de vie">
+  <meta property="og:description" content="Transformez un espace oublié en destination incontournable.">
+  <meta name="theme-color" content="#FAFAF7">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,650;0,800;1,400&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-theme="light">
+
+  <!-- ═══════════════════════════ 00 · PRÉCHARGEMENT ═══════════════════════════ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__mark">Air<span>Fit</span><i class="loader__dot"></i></div>
+  </div>
+
+  <!-- ═══════════════════════════ NAVIGATION ═══════════════════════════ -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#hero" data-scroll-to>Air<span>Fit</span><i></i></a>
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a href="#realisations" data-scroll-to>Réalisations</a>
+      <a href="#conception" data-scroll-to>Conception</a>
+    </nav>
+    <a class="btn btn--ink btn--sm" href="#contact" data-scroll-to data-magnetic>
+      <span>Votre projet</span>
+    </a>
+  </header>
+
+  <main id="main">
+
+    <!-- ═══════════════════════════ 01 · HERO ═══════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero__media" data-hero-media>
+        <!-- Déposer la vidéo drone ici : assets/video/hero.mp4 (le JS bascule seul) -->
+        <video class="hero__video" muted loop playsinline preload="none" data-hero-video>
+          <source src="assets/video/hero.mp4" type="video/mp4">
+        </video>
+        <img class="hero__img" data-hero-img
+             src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?q=80&w=2400&auto=format&fit=crop"
+             alt="Coureuse au coucher de soleil sur un plateau sportif"
+             onerror="this.closest('.hero__media').classList.add('media--fallback');this.remove()">
+        <div class="hero__grade" aria-hidden="true"></div>
+        <div class="hero__flare" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__kicker" data-reveal="fade">
+          <span class="tick"></span>Plateaux sportifs clé en main · Made in France
+        </p>
+        <h1 class="hero__title" data-split>
+          <span>Le sport devient</span>
+          <span>un <em>lieu de vie</em>.</span>
+        </h1>
+        <p class="hero__sub" data-reveal="up" data-delay="0.55">
+          Transformez un espace oublié en destination incontournable.
+        </p>
+        <div class="hero__actions" data-reveal="up" data-delay="0.7">
+          <a class="btn btn--green" href="#contact" data-scroll-to data-magnetic><span>Imaginer votre plateau</span></a>
+          <a class="btn btn--ghost" href="#realisations" data-scroll-to data-magnetic><span>Voir les lieux créés</span></a>
+        </div>
+      </div>
+
+      <a class="hero__scrollcue" href="#manifeste" data-scroll-to aria-label="Faire défiler">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ═══════════════════════════ 02 · MANIFESTE ═══════════════════════════ -->
+    <section class="manifesto" id="manifeste">
+      <p class="manifesto__label" data-reveal="fade"><span class="tick"></span>Notre conviction</p>
+      <h2 class="manifesto__text" data-manifesto>
+        Nous ne posons pas des machines. Nous créons des lieux où les enfants jouent,
+        où les familles se retrouvent, où les seniors bougent —
+        des lieux qui fabriquent des <em>souvenirs</em>.
+      </h2>
+    </section>
+
+    <!-- ═══════════════════════════ 03 · L'HISTOIRE (sticky) ═══════════════════════════ -->
+    <section class="story" id="histoire" data-story>
+      <div class="story__pin">
+        <figure class="story__media">
+          <div class="story__frame is-active" data-story-frame>
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000&auto=format&fit=crop" alt="Terrain vague au soleil couchant"
+                 onerror="this.parentElement.classList.add('media--fallback');this.remove()">
+          </div>
+          <div class="story__frame" data-story-frame>
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2000&auto=format&fit=crop" alt="Plans et esquisses d'architecte"
+                 onerror="this.parentElement.classList.add('media--fallback');this.remove()">
+          </div>
+          <div class="story__frame" data-story-frame>
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2000&auto=format&fit=crop" alt="Chantier en cours"
+                 onerror="this.parentElement.classList.add('media--fallback');this.remove()">
+          </div>
+          <div class="story__frame" data-story-frame>
+            <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=2000&auto=format&fit=crop" alt="Piste d'athlétisme neuve"
+                 onerror="this.parentElement.classList.add('media--fallback');this.remove()">
+          </div>
+          <div class="story__frame" data-story-frame>
+            <img src="https://images.unsplash.com/photo-1472162072942-cd5147eb3902?q=80&w=2000&auto=format&fit=crop" alt="Enfants qui jouent, familles réunies"
+                 onerror="this.parentElement.classList.add('media--fallback');this.remove()">
+          </div>
+        </figure>
+
+        <div class="story__copy">
+          <p class="story__eyebrow"><span class="tick tick--green"></span>Une métamorphose</p>
+          <div class="story__steps">
+            <div class="story__step is-active" data-story-step>
+              <span class="story__num">01</span>
+              <h3>Un terrain <em>vide</em>.</h3>
+              <p>Un espace que tout le monde traverse. Que personne ne regarde.</p>
+            </div>
+            <div class="story__step" data-story-step>
+              <span class="story__num">02</span>
+              <h3>Une <em>idée</em>.</h3>
+              <p>Et si c'était ici que la commune se retrouvait&nbsp;?</p>
+            </div>
+            <div class="story__step" data-story-step>
+              <span class="story__num">03</span>
+              <h3>Le <em>chantier</em>.</h3>
+              <p>Quelques semaines. Une équipe. Zéro complexité pour vous.</p>
+            </div>
+            <div class="story__step" data-story-step>
+              <span class="story__num">04</span>
+              <h3>L'<em>ouverture</em>.</h3>
+              <p>Le ruban est coupé. Les premiers curieux s'approchent.</p>
+            </div>
+            <div class="story__step" data-story-step>
+              <span class="story__num">05</span>
+              <h3>La <em>vie</em>.</h3>
+              <p>Le plateau devient le cœur battant de la commune.</p>
+            </div>
+          </div>
+          <div class="story__progress" aria-hidden="true"><i data-story-bar></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ 04 · AVANT / APRÈS ═══════════════════════════ -->
+    <section class="compare" id="avant-apres">
+      <header class="section-head">
+        <p class="section-head__label" data-reveal="fade"><span class="tick"></span>La preuve</p>
+        <h2 class="section-head__title" data-split>
+          <span>Même adresse.</span>
+          <span><em>Autre monde.</em></span>
+        </h2>
+      </header>
+
+      <div class="compare__stage" data-compare tabindex="0" role="slider"
+           aria-label="Comparer avant et après" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+        <figure class="compare__after">
+          <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=2400&auto=format&fit=crop" alt="Plateau sportif AirFit vivant"
+               onerror="this.parentElement.classList.add('media--fallback');this.remove()">
+          <figcaption>Après — Plateau AirFit</figcaption>
+        </figure>
+        <figure class="compare__before" data-compare-before>
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2400&auto=format&fit=crop" alt="Terrain vide avant travaux"
+               onerror="this.parentElement.classList.add('media--fallback','media--fallback-dim');this.remove()">
+          <figcaption>Avant</figcaption>
+        </figure>
+        <div class="compare__handle" data-compare-handle aria-hidden="true">
+          <i></i><b>◂ ▸</b><i></i>
+        </div>
+      </div>
+      <p class="compare__hint" data-reveal="fade">Faites glisser pour comparer</p>
+    </section>
+
+    <!-- ═══════════════════════════ 05 · LES CHIFFRES ═══════════════════════════ -->
+    <section class="stats" id="chiffres">
+      <div class="stats__item">
+        <p class="stats__value"><span data-counter data-to="550" data-prefix="+">0</span></p>
+        <p class="stats__caption" data-reveal="up">aires installées en France et dans le monde</p>
+      </div>
+      <div class="stats__item">
+        <p class="stats__value"><span data-counter data-to="3" data-prefix="+" data-suffix="M">0</span></p>
+        <p class="stats__caption" data-reveal="up">utilisateurs qui bougent, gratuitement, chaque année</p>
+      </div>
+      <div class="stats__item">
+        <p class="stats__value"><span data-counter data-to="98" data-suffix="%">0</span></p>
+        <p class="stats__caption" data-reveal="up">de collectivités satisfaites — et des habitants fiers</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ 06 · RÉALISATIONS (horizontal) ═══════════════════════════ -->
+    <section class="works" id="realisations" data-works>
+      <header class="section-head section-head--onink">
+        <p class="section-head__label" data-reveal="fade"><span class="tick tick--green"></span>Réalisations</p>
+        <h2 class="section-head__title" data-split>
+          <span>Des lieux qui existent</span>
+          <span><em>déjà</em>.</span>
+        </h2>
+        <div class="works__filters" role="tablist" aria-label="Filtrer les projets">
+          <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">Tous</button>
+          <button class="chip" data-filter="collectivite" role="tab" aria-selected="false">Collectivités</button>
+          <button class="chip" data-filter="camping" role="tab" aria-selected="false">Campings</button>
+          <button class="chip" data-filter="ecole" role="tab" aria-selected="false">Écoles &amp; campus</button>
+        </div>
+      </header>
+
+      <div class="works__viewport" data-works-viewport>
+        <div class="works__track" data-works-track>
+          <article class="work" data-cat="collectivite" data-tilt>
+            <figure><img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1600&auto=format&fit=crop" alt="Aire de street-workout urbaine"
+                 onerror="this.parentElement.classList.add('media--fallback');this.remove()"></figure>
+            <div class="work__meta"><span>Commune · 12 000 hab.</span><h3>Vendée — cœur de bourg</h3></div>
+          </article>
+          <article class="work" data-cat="camping" data-tilt>
+            <figure><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1600&auto=format&fit=crop" alt="Cross-training en plein air"
+                 onerror="this.parentElement.classList.add('media--fallback');this.remove()"></figure>
+            <div class="work__meta"><span>Camping 5★ · Méditerranée</span><h3>L'aire qui fidélise</h3></div>
+          </article>
+          <article class="work" data-cat="ecole" data-tilt>
+            <figure><img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=1600&auto=format&fit=crop" alt="Étudiants à l'entraînement"
+                 onerror="this.parentElement.classList.add('media--fallback');this.remove()"></figure>
+            <div class="work__meta"><span>Campus universitaire</span><h3>Le sport entre deux cours</h3></div>
+          </article>
+          <article class="work" data-cat="collectivite" data-tilt>
+            <figure><img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=1600&auto=format&fit=crop" alt="Coureur au lever du soleil"
+                 onerror="this.parentElement.classList.add('media--fallback');this.remove()"></figure>
+            <div class="work__meta"><span>Base de loisirs</span><h3>Bord de lac, 7j/7</h3></div>
+          </article>
+          <article class="work" data-cat="collectivite" data-tilt>
+            <figure><img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1600&auto=format&fit=crop" alt="Groupe de sportifs en extérieur"
+                 onerror="this.parentElement.classList.add('media--fallback');this.remove()"></figure>
+            <div class="work__meta"><span>Métropole · parc urbain</span><h3>Cours collectifs gratuits</h3></div>
+          </article>
+          <article class="work" data-cat="camping" data-tilt>
+            <figure><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1600&auto=format&fit=crop" alt="Yoga au soleil"
+                 onerror="this.parentElement.classList.add('media--fallback');this.remove()"></figure>
+            <div class="work__meta"><span>Hôtellerie de plein air</span><h3>Bien-être face à la mer</h3></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ 07 · CONCEPTION (timeline) ═══════════════════════════ -->
+    <section class="steps" id="conception">
+      <header class="section-head">
+        <p class="section-head__label" data-reveal="fade"><span class="tick"></span>Clé en main</p>
+        <h2 class="section-head__title" data-split>
+          <span>Vous rêvez le lieu.</span>
+          <span>On s'occupe <em>de tout</em>.</span>
+        </h2>
+      </header>
+
+      <ol class="steps__list" data-steps>
+        <li class="steps__item" data-reveal="up">
+          <span class="steps__index">01</span>
+          <div><h3>Diagnostic du site</h3><p>Usages, publics, flux. On écoute avant de dessiner.</p></div>
+        </li>
+        <li class="steps__item" data-reveal="up">
+          <span class="steps__index">02</span>
+          <div><h3>Conception 3D</h3><p>Votre plateau, visualisé chez vous, avant le premier coup de pelle.</p></div>
+        </li>
+        <li class="steps__item" data-reveal="up">
+          <span class="steps__index">03</span>
+          <div><h3>Fabrication française</h3><p>Acier, garanties longues, zéro entretien superflu.</p></div>
+        </li>
+        <li class="steps__item" data-reveal="up">
+          <span class="steps__index">04</span>
+          <div><h3>Installation</h3><p>Quelques jours de chantier, un lieu prêt à vivre.</p></div>
+        </li>
+        <li class="steps__item" data-reveal="up">
+          <span class="steps__index">05</span>
+          <div><h3>Animation</h3><p>Cours collectifs, appli, inauguration : le lieu démarre habité.</p></div>
+        </li>
+        <i class="steps__line" data-steps-line aria-hidden="true"></i>
+      </ol>
+    </section>
+
+    <!-- ═══════════════════════════ 08 · TÉMOIGNAGES ═══════════════════════════ -->
+    <section class="voices" id="temoignages" data-voices>
+      <div class="voices__pin">
+        <p class="voices__label"><span class="tick tick--green"></span>Ils l'ont vécu</p>
+        <blockquote class="voices__quote">
+          <p class="is-active" data-voice>«&nbsp;Le plateau est devenu le lieu le plus fréquenté de la commune. Devant la mairie.&nbsp;»<cite>— Maire, commune de 8&nbsp;500 habitants</cite></p>
+          <p data-voice>«&nbsp;Nos résidents le demandent avant même la piscine. C'est devenu un argument de réservation.&nbsp;»<cite>— Directeur de camping 5★</cite></p>
+          <p data-voice>«&nbsp;Mes filles y vont après l'école. J'y retrouve mes voisins. On ne se croisait jamais avant.&nbsp;»<cite>— Habitante, quartier réaménagé</cite></p>
+        </blockquote>
+        <div class="voices__faces" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop" alt="" data-float onerror="var i=document.createElement('i');i.className='media--fallback';i.dataset.float='';this.replaceWith(i)">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop" alt="" data-float onerror="var i=document.createElement('i');i.className='media--fallback';i.dataset.float='';this.replaceWith(i)">
+          <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=400&auto=format&fit=crop" alt="" data-float onerror="var i=document.createElement('i');i.className='media--fallback';i.dataset.float='';this.replaceWith(i)">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop" alt="" data-float onerror="var i=document.createElement('i');i.className='media--fallback';i.dataset.float='';this.replaceWith(i)">
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ 09 · CTA FINAL ═══════════════════════════ -->
+    <section class="finale" id="contact">
+      <div class="finale__media" data-parallax="12">
+        <img src="https://images.unsplash.com/photo-1502904550040-7534597429ae?q=80&w=2400&auto=format&fit=crop" alt="Coucher de soleil doré sur un espace de sport en plein air"
+             onerror="this.parentElement.classList.add('media--fallback');this.remove()">
+        <div class="finale__grade" aria-hidden="true"></div>
+      </div>
+      <div class="finale__content">
+        <h2 class="finale__title" data-split>
+          <span>Votre commune mérite</span>
+          <span>son <em>lieu de vie</em>.</span>
+        </h2>
+        <a class="btn btn--paper btn--xl" href="mailto:contact@airfit.co" data-magnetic><span>Commencer le projet</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════ 10 · FOOTER ═══════════════════════════ -->
+  <footer class="footer">
+    <a class="footer__brand" href="#hero" data-scroll-to>Air<span>Fit</span><i></i></a>
+    <p>Fabricant français · Signes &amp; Chalon-sur-Saône</p>
+    <p>© 2026</p>
+  </footer>
+
+  <!-- Libs (vendorées — aucune dépendance CDN au runtime) -->
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
