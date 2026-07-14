@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirFit — Plateaux sportifs clé en main pour les collectivités</title>
+  <meta name="description" content="AirFit conçoit, fabrique et installe des plateaux sportifs clé en main pour les communes et collectivités. Trois modèles — Compact, Signature, Arena — pour transformer durablement vos espaces publics.">
+  <link rel="preload" href="fonts/barlow-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/barlow-semi-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ======================= HERO / 00 ======================= -->
+  <header class="hero" id="hero">
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="nav__logo" href="#hero">Air<span>Fit</span></a>
+      <div class="nav__links">
+        <a class="nav__link" href="#plateaux">Plateaux</a>
+        <a class="nav__link" href="#realisations">Réalisations</a>
+      </div>
+      <a class="btn btn--ghost nav__cta" href="#contact">Imaginer mon projet</a>
+    </nav>
+
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="hero__eyebrow"><span class="hero__eyebrow-rule"></span>Équipements sportifs urbains</p>
+        <h1 class="hero__title">
+          <span class="hero__line"><span>Le sport devient</span></span>
+          <span class="hero__line"><span>un lieu <em>de vie.</em></span></span>
+        </h1>
+        <p class="hero__sub">Des plateaux sportifs clé en main, conçus pour transformer durablement vos espaces.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--light" href="#plateaux">Découvrir les plateaux</a>
+          <a class="btn btn--outline" href="#realisations">Voir nos réalisations</a>
+        </div>
+        <p class="hero__meta">Conception&nbsp;<span aria-hidden="true">•</span>&nbsp;Fabrication&nbsp;<span aria-hidden="true">•</span>&nbsp;Installation</p>
+      </div>
+
+      <div class="hero__stage" aria-hidden="true">
+        <div class="hero__light"></div>
+        <div class="hero__plateau" id="hero-plateau"></div>
+      </div>
+    </div>
+
+    <div class="hero__foot">
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-line"></span>
+        <span class="hero__scroll-label">Défiler</span>
+      </div>
+      <p class="hero__trust"><strong class="num-xl">+550</strong><span>installations<br>en France</span></p>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============= 01 · SÉLECTEUR DE PLATEAUX ============= -->
+    <section class="selector" id="plateaux" aria-labelledby="selector-title">
+      <div class="chap container">
+        <span class="chap__index">01</span>
+        <span class="chap__rule" aria-hidden="true"></span>
+        <span class="chap__label">Les plateaux</span>
+      </div>
+      <h2 class="selector__title container" id="selector-title">Un plateau. <em>Trois façons</em> d’activer votre&nbsp;territoire.</h2>
+
+      <div class="selector__stage" id="selector-stage" role="group" aria-roledescription="sélecteur de plateaux" aria-label="Choix du modèle de plateau">
+        <div class="selector__split container">
+          <div class="selector__left">
+            <ol class="selector__list" id="selector-list">
+              <li><button class="selector__name" type="button" data-index="0" aria-pressed="false"><span class="selector__num">01</span><span class="selector__word">Compact</span></button></li>
+              <li><button class="selector__name" type="button" data-index="1" aria-pressed="true"><span class="selector__num">02</span><span class="selector__word">Signature</span></button></li>
+              <li><button class="selector__name" type="button" data-index="2" aria-pressed="false"><span class="selector__num">03</span><span class="selector__word">Arena</span></button></li>
+            </ol>
+
+            <div class="selector__info" id="selector-info" aria-live="polite">
+              <p class="selector__phrase" id="sel-phrase">Le plateau complet qui devient le cœur battant de la commune.</p>
+              <dl class="selector__specs">
+                <div><dt>Surface</dt><dd id="sel-surface">Dès 140 m²</dd></div>
+                <div><dt>Capacité</dt><dd id="sel-users">Jusqu’à 18 utilisateurs simultanés</dd></div>
+              </dl>
+              <ul class="selector__tags" id="sel-tags"></ul>
+              <a class="btn btn--dark selector__cta" id="sel-cta" href="#contact">Découvrir ce plateau</a>
+            </div>
+
+            <p class="selector__counter" aria-hidden="true"><span id="sel-counter">02</span><span class="selector__counter-sep">/</span>03</p>
+          </div>
+
+          <div class="selector__right">
+            <div class="selector__viewport" id="selector-viewport" tabindex="0" role="slider" aria-label="Modèle de plateau affiché" aria-valuemin="1" aria-valuemax="3" aria-valuenow="2" aria-valuetext="Signature">
+              <!-- SVG des 3 plateaux injectés par JS -->
+            </div>
+            <p class="selector__hint" aria-hidden="true">Glisser, cliquer ou flèches ← →</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= 02 · TRANSFORMATION ============= -->
+    <section class="transfo" id="transformation" aria-labelledby="transfo-title">
+      <div class="chap container">
+        <span class="chap__index">02</span>
+        <span class="chap__rule" aria-hidden="true"></span>
+        <span class="chap__label">La transformation</span>
+      </div>
+      <div class="container transfo__head">
+        <h2 class="section-title" id="transfo-title">D’un espace vide<br><em>à un lieu de vie.</em></h2>
+        <p class="section-lede">Une dalle oubliée, un délaissé urbain, un coin de parc : quelques semaines suffisent pour en faire le point de rencontre du quartier. Faites glisser pour voir la différence.</p>
+      </div>
+
+      <div class="transfo__frame">
+        <div class="ba" id="ba"
+             role="slider" tabindex="0" aria-label="Comparateur avant / après"
+             aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="50 % après">
+          <div class="ba__layer ba__layer--before" aria-hidden="true">
+            <div class="ba__scene" id="ba-before"></div>
+            <span class="ba__tag ba__tag--before">Avant</span>
+          </div>
+          <div class="ba__layer ba__layer--after" id="ba-after-layer" aria-hidden="true">
+            <div class="ba__scene" id="ba-after"></div>
+            <span class="ba__tag ba__tag--after">Après</span>
+          </div>
+          <div class="ba__handle" id="ba-handle" aria-hidden="true">
+            <span class="ba__handle-line"></span>
+            <span class="ba__handle-grip">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5l-6 7 6 7M16 5l6 7-6 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </div>
+        <p class="transfo__caption container">Implantation type — plateau Signature, 140&nbsp;m², sol amortissant coulé en place.</p>
+      </div>
+    </section>
+
+    <!-- ============= 03 · CLÉ EN MAIN ============= -->
+    <section class="process" id="cle-en-main" aria-labelledby="process-title">
+      <div class="chap container">
+        <span class="chap__index">03</span>
+        <span class="chap__rule" aria-hidden="true"></span>
+        <span class="chap__label">La méthode</span>
+      </div>
+      <div class="container process__head">
+        <h2 class="section-title" id="process-title">Une solution<br><em>réellement</em> clé en main.</h2>
+        <p class="section-lede">Un seul interlocuteur, de la première esquisse au dernier boulon. Vous signez, nous orchestrons tout le reste.</p>
+      </div>
+
+      <div class="process__timeline container" id="process-timeline">
+        <div class="process__line" aria-hidden="true"><span class="process__line-fill"></span></div>
+        <ol class="process__steps">
+          <!-- Étapes injectées par JS -->
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============= 04 · USAGES ============= -->
+    <section class="usages" id="usages" aria-labelledby="usages-title">
+      <div class="chap container">
+        <span class="chap__index">04</span>
+        <span class="chap__rule" aria-hidden="true"></span>
+        <span class="chap__label">Les usages</span>
+      </div>
+      <div class="container usages__head">
+        <h2 class="section-title" id="usages-title">Des usages pour<br><em>toutes les générations.</em></h2>
+        <p class="section-lede">Un plateau AirFit n’appartient à personne — et donc à tout le monde. Du premier café du matin aux dernières tractions du soir.</p>
+      </div>
+      <div class="usages__grid container-wide" id="usages-grid">
+        <!-- Figures injectées par JS -->
+      </div>
+    </section>
+
+    <!-- ============= 05 · CHIFFRES ============= -->
+    <section class="figures" id="chiffres" aria-labelledby="figures-title">
+      <div class="chap container">
+        <span class="chap__index">05</span>
+        <span class="chap__rule" aria-hidden="true"></span>
+        <span class="chap__label">La preuve</span>
+      </div>
+      <h2 class="visually-hidden" id="figures-title">AirFit en chiffres</h2>
+      <div id="figures-list">
+        <!-- Chiffres XXL injectés par JS -->
+      </div>
+    </section>
+
+    <!-- ============= 06 · RÉALISATIONS ============= -->
+    <section class="works" id="realisations" aria-labelledby="works-title">
+      <div class="chap container">
+        <span class="chap__index">06</span>
+        <span class="chap__rule" aria-hidden="true"></span>
+        <span class="chap__label">Les réalisations</span>
+      </div>
+      <div class="container works__head">
+        <h2 class="section-title" id="works-title">Chaque plateau<br><em>raconte un lieu.</em></h2>
+        <div class="works__filters" role="group" aria-label="Filtrer les réalisations">
+          <button class="works__filter is-active" type="button" data-filter="all" aria-pressed="true">Tous</button>
+          <button class="works__filter" type="button" data-filter="compact" aria-pressed="false">Compact</button>
+          <button class="works__filter" type="button" data-filter="signature" aria-pressed="false">Signature</button>
+          <button class="works__filter" type="button" data-filter="arena" aria-pressed="false">Arena</button>
+        </div>
+      </div>
+      <div class="works__pin" id="works-pin">
+        <div class="works__track" id="works-track">
+          <!-- Panneaux injectés par JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= 07 · CTA FINAL ============= -->
+    <section class="cta" id="contact" aria-labelledby="cta-title">
+      <div class="cta__plateau" id="cta-plateau" aria-hidden="true"></div>
+      <div class="cta__inner container">
+        <div class="chap chap--light">
+          <span class="chap__index">07</span>
+          <span class="chap__rule" aria-hidden="true"></span>
+          <span class="chap__label">Votre projet</span>
+        </div>
+        <h2 class="cta__title" id="cta-title">Et si le prochain lieu de vie<br><em>était chez vous&nbsp;?</em></h2>
+        <a class="btn btn--light btn--xl" href="mailto:projets@airfit.fr">Imaginer mon projet</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__row">
+      <span class="footer__logo">Air<span>Fit</span></span>
+      <span class="footer__line">© 2026 AirFit — Conception, fabrication et installation de plateaux sportifs · Made in France</span>
+      <a class="footer__link" href="mailto:projets@airfit.fr">projets@airfit.fr</a>
+    </div>
+  </footer>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

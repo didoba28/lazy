@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirFit — Plateaux sportifs clé en main pour les collectivités</title>
+  <meta name="description" content="AirFit conçoit, fabrique et installe des plateaux sportifs clé en main pour les communes et collectivités. Trois modèles — Compact, Signature, Arena — pour transformer durablement vos espaces publics.">
+  <link rel="preload" href="fonts/barlow-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/barlow-semi-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <a class="nav-logo" href="#hero" aria-label="AirFit — retour en haut">Air<strong>Fit</strong></a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#plateaux">Plateaux</a>
+      <a href="#realisations">Réalisations</a>
+    </nav>
+    <a class="btn btn-nav" href="#contact">Imaginer mon projet</a>
+  </header>
+
+  <main>
+    <!-- ===================== 1. HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-beam" aria-hidden="true"></div>
+      <div class="hero-light" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="line"><span class="line-in">Le sport devient</span></span>
+            <span class="line"><span class="line-in">un lieu de vie.</span></span>
+          </h1>
+          <p class="hero-sub">Des plateaux sportifs clé en main, conçus pour transformer durablement vos espaces.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#plateaux">Découvrir les plateaux</a>
+            <a class="btn btn-ghost" href="#realisations">Voir nos réalisations</a>
+          </div>
+          <p class="hero-mention">Conception&ensp;•&ensp;Fabrication&ensp;•&ensp;Installation</p>
+        </div>
+
+        <div class="hero-plateau" id="heroPlateau" aria-hidden="true"></div>
+
+        <p class="hero-trust"><strong>+550</strong> installations en France</p>
+
+        <div class="hero-scroll" aria-hidden="true">
+          <span class="hero-scroll-line"></span>
+          <span class="hero-scroll-label">Découvrir</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 2-3. SÉLECTEUR DE PLATEAUX ===================== -->
+    <section class="selector-section" id="plateaux" data-theme="night">
+      <div class="selector-sticky">
+        <div class="selector-glow" id="selectorGlow" aria-hidden="true"></div>
+
+        <div class="selector-head">
+          <h2 class="selector-title">Un plateau. Trois façons<br>d’activer votre territoire.</h2>
+
+          <div class="selector-tabs" role="tablist" aria-label="Choix du modèle de plateau" id="selectorTabs">
+            <button class="selector-tab" role="tab" id="tab-compact" aria-selected="false" aria-controls="panel-compact" data-index="0">Compact</button>
+            <button class="selector-tab" role="tab" id="tab-signature" aria-selected="true" aria-controls="panel-signature" data-index="1">Signature</button>
+            <button class="selector-tab" role="tab" id="tab-arena" aria-selected="false" aria-controls="panel-arena" data-index="2">Arena</button>
+            <span class="selector-tab-ink" id="selectorInk" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <div class="selector-stage" id="selectorStage">
+          <div class="selector-plateau" data-model="compact" aria-hidden="true"></div>
+          <div class="selector-plateau is-active" data-model="signature" aria-hidden="true"></div>
+          <div class="selector-plateau" data-model="arena" aria-hidden="true"></div>
+        </div>
+
+        <div class="selector-info" id="selectorInfo" role="tabpanel" tabindex="0" aria-live="polite">
+          <div class="selector-info-main">
+            <h3 class="selector-name" id="selName">Signature</h3>
+            <p class="selector-desc" id="selDesc">Le plateau complet qui devient le point de rencontre de la commune.</p>
+            <ul class="selector-tags" id="selTags"></ul>
+          </div>
+          <div class="selector-info-side">
+            <p class="selector-spec"><span class="selector-spec-value" id="selSurface">Dès 140 m²</span><span class="selector-spec-label">surface</span></p>
+            <p class="selector-spec"><span class="selector-spec-value" id="selCapacite">Jusqu’à 18 utilisateurs simultanés</span><span class="selector-spec-label">capacité</span></p>
+            <a class="btn btn-primary btn-sm" href="#contact" id="selCta">Découvrir ce plateau</a>
+          </div>
+        </div>
+
+        <div class="selector-index" aria-hidden="true"><span id="selNum">02</span><span class="selector-index-sep"></span>03</div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. AVANT / APRÈS ===================== -->
+    <section class="transform-section" id="transformation">
+      <div class="section-intro">
+        <p class="kicker">Transformation</p>
+        <h2 class="section-title">D’un espace vide<br>à un lieu de vie.</h2>
+        <p class="section-lede">Glissez pour révéler la transformation — du terrain nu au plateau habité.</p>
+      </div>
+
+      <div class="ba" id="baRoot">
+        <div class="ba-scene"
+             role="slider" tabindex="0" id="baSlider"
+             aria-label="Comparateur avant / après de la transformation du terrain"
+             aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"
+             aria-valuetext="Installation en cours">
+          <!-- AVANT : terrain vide -->
+          <div class="ba-before" aria-hidden="true">
+            <svg viewBox="0 0 900 520" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <linearGradient id="ba-sky" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#0A1B38"/><stop offset="1" stop-color="#1C2C47"/>
+                </linearGradient>
+                <linearGradient id="ba-ground" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#31405A"/><stop offset="1" stop-color="#232F47"/>
+                </linearGradient>
+              </defs>
+              <rect width="900" height="320" fill="url(#ba-sky)"/>
+              <rect y="300" width="900" height="220" fill="url(#ba-ground)"/>
+              <g stroke="#4A5A76" stroke-width="2" opacity="0.7">
+                <path d="M60 380 l90 -14 M210 430 l70 -8 M640 400 l110 -12 M420 460 l90 -10 M760 350 l70 -8"/>
+              </g>
+              <g fill="#42536F">
+                <circle cx="140" cy="420" r="5"/><circle cx="330" cy="390" r="4"/>
+                <circle cx="540" cy="440" r="6"/><circle cx="720" cy="470" r="4"/><circle cx="820" cy="420" r="5"/>
+              </g>
+              <g class="ba-chantier">
+                <g stroke="#8FA5C4" stroke-width="3" stroke-linecap="round">
+                  <line x1="240" y1="360" x2="240" y2="322"/><line x1="470" y1="345" x2="470" y2="309"/><line x1="680" y1="372" x2="680" y2="334"/>
+                </g>
+                <g fill="none" stroke="#B9C6D9" stroke-width="2" stroke-dasharray="10 8" opacity="0.85">
+                  <path d="M240 322 L470 309 L680 334"/>
+                </g>
+              </g>
+              <text x="64" y="120" class="ba-tag" fill="#8FA5C4">Terrain communal — avant</text>
+            </svg>
+          </div>
+
+          <!-- APRÈS : plateau installé, habité -->
+          <div class="ba-after" id="baAfter" aria-hidden="true">
+            <div class="ba-after-bg"></div>
+            <div class="ba-after-plateau" id="baPlateau"></div>
+            <svg class="ba-people" viewBox="0 0 900 520" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <g class="ba-person" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none">
+                <circle cx="180" cy="386" r="9" fill="#FFFFFF" stroke="none"/><path d="M180 396 v34 M180 406 l-16 14 M180 406 l16 12 M180 430 l-12 26 M180 430 l13 25"/>
+              </g>
+              <g class="ba-person" stroke="#9FC3E4" stroke-width="4" stroke-linecap="round" fill="none">
+                <circle cx="745" cy="410" r="8" fill="#9FC3E4" stroke="none"/><path d="M745 419 v30 M745 428 l-14 -10 M745 428 l14 10 M745 449 l-10 24 M745 449 l11 23"/>
+              </g>
+              <g class="ba-person" stroke="#FFFFFF" stroke-width="3.4" stroke-linecap="round" fill="none" opacity="0.9">
+                <circle cx="640" cy="452" r="7" fill="#FFFFFF" stroke="none"/><path d="M640 460 v26 M640 468 l-12 10 M640 468 l12 8 M640 486 l-9 20 M640 486 l9 20"/>
+              </g>
+              <text x="64" y="120" class="ba-tag" fill="#BBD4EC">Plateau AirFit — après</text>
+            </svg>
+          </div>
+
+          <!-- Poignée -->
+          <div class="ba-handle" id="baHandle" aria-hidden="true">
+            <span class="ba-handle-line"></span>
+            <span class="ba-handle-grip">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+                <path d="M8 6 L3 12 L8 18 M16 6 L21 12 L16 18"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <ol class="ba-steps" id="baSteps">
+          <li data-min="0">Terrain vide</li>
+          <li data-min="20">Préparation</li>
+          <li data-min="40">Installation</li>
+          <li data-min="62">Plateau terminé</li>
+          <li data-min="82">Habitants</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== 5. CLÉ EN MAIN (respiration blanche) ===================== -->
+    <section class="keyturn-section" id="cle-en-main" data-theme="light">
+      <div class="section-intro">
+        <p class="kicker kicker-dark">Méthode</p>
+        <h2 class="section-title">Une solution<br>réellement clé en main.</h2>
+        <p class="section-lede">Six étapes, un seul interlocuteur. Vous n’avez rien à orchestrer&nbsp;: nous portons le projet de bout en bout.</p>
+      </div>
+
+      <div class="keyturn" id="keyturn">
+        <div class="keyturn-line" aria-hidden="true"><span class="keyturn-line-fill" id="keyturnFill"></span></div>
+        <ol class="keyturn-steps">
+          <li class="keyturn-step">
+            <span class="keyturn-num">01</span>
+            <div class="keyturn-body"><h3>Étude du besoin</h3><p>Nous écoutons le territoire&nbsp;: usages attendus, publics, contraintes du site, budget. Le projet part de vous.</p></div>
+          </li>
+          <li class="keyturn-step">
+            <span class="keyturn-num">02</span>
+            <div class="keyturn-body"><h3>Conception</h3><p>Nos designers dessinent un plateau adapté&nbsp;: implantation, agrès, marquages, circulation, intégration paysagère.</p></div>
+          </li>
+          <li class="keyturn-step">
+            <span class="keyturn-num">03</span>
+            <div class="keyturn-body"><h3>Visualisation 3D</h3><p>Vous voyez le plateau dans votre espace avant toute décision — vues réalistes, présentables en conseil municipal.</p></div>
+          </li>
+          <li class="keyturn-step">
+            <span class="keyturn-num">04</span>
+            <div class="keyturn-body"><h3>Fabrication</h3><p>Structures et sols fabriqués en France, matériaux garantis, pensés pour un usage public intensif en extérieur.</p></div>
+          </li>
+          <li class="keyturn-step">
+            <span class="keyturn-num">05</span>
+            <div class="keyturn-body"><h3>Installation</h3><p>Nos équipes installent et réceptionnent le plateau. Quelques jours de chantier, zéro coordination à votre charge.</p></div>
+          </li>
+          <li class="keyturn-step">
+            <span class="keyturn-num">06</span>
+            <div class="keyturn-body"><h3>Suivi</h3><p>Contrôles, maintenance, animation des usages&nbsp;: nous restons présents pour que le lieu vive, saison après saison.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== 6. GÉNÉRATIONS ===================== -->
+    <section class="gens-section" id="generations">
+      <div class="section-intro">
+        <p class="kicker">Usages</p>
+        <h2 class="section-title">Des usages pour<br>toutes les générations.</h2>
+        <p class="section-lede">Un même plateau, des pratiques qui se croisent du matin au soir — sans réservation, sans licence, sans barrière.</p>
+      </div>
+
+      <div class="gens-grid">
+        <figure class="gens-tile gens-tile-a">
+          <img src="https://images.unsplash.com/photo-1472745433479-4556f22e32c2?w=1100&q=70" alt="Enfants jouant en plein air" loading="lazy" onerror="this.remove()">
+          <figcaption><strong>Enfants</strong><span>Motricité, équilibre, jeu libre</span></figcaption>
+        </figure>
+        <figure class="gens-tile gens-tile-b">
+          <img src="https://images.unsplash.com/photo-1598971639058-fab3c3109a00?w=1100&q=70" alt="Adolescents pratiquant le street-workout" loading="lazy" onerror="this.remove()">
+          <figcaption><strong>Ados</strong><span>Street-workout, dépassement, codes à eux</span></figcaption>
+        </figure>
+        <figure class="gens-tile gens-tile-c">
+          <img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?w=1100&q=70" alt="Sportif en entraînement cross-training" loading="lazy" onerror="this.remove()">
+          <figcaption><strong>Sportifs</strong><span>Cross-training, circuits, performance</span></figcaption>
+        </figure>
+        <figure class="gens-tile gens-tile-d">
+          <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=1100&q=70" alt="Famille active dans un parc" loading="lazy" onerror="this.remove()">
+          <figcaption><strong>Familles</strong><span>Un rendez-vous du week-end</span></figcaption>
+        </figure>
+        <figure class="gens-tile gens-tile-e">
+          <img src="https://images.unsplash.com/photo-1447452001602-7090c7ab2db3?w=1100&q=70" alt="Seniors pratiquant une activité douce en extérieur" loading="lazy" onerror="this.remove()">
+          <figcaption><strong>Seniors</strong><span>Mobilité, prévention, lien social</span></figcaption>
+        </figure>
+        <figure class="gens-tile gens-tile-f">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1100&q=70" alt="Séance de pratique douce au lever du jour" loading="lazy" onerror="this.remove()">
+          <figcaption><strong>Pratiques douces</strong><span>Yoga, stretching, respiration</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== 7. CHIFFRES XXL ===================== -->
+    <section class="stats-section" id="chiffres">
+      <!-- rempli par js/modules/counters.js -->
+    </section>
+
+    <!-- ===================== 8. RÉALISATIONS ===================== -->
+    <section class="real-section" id="realisations">
+      <div class="real-head">
+        <div>
+          <p class="kicker">Réalisations</p>
+          <h2 class="section-title">Ils ont déjà<br>transformé leur ville.</h2>
+        </div>
+        <div class="real-filters" role="group" aria-label="Filtrer les réalisations" id="realFilters">
+          <button class="real-filter is-active" data-filter="all" aria-pressed="true">Tous</button>
+          <button class="real-filter" data-filter="compact" aria-pressed="false">Compact</button>
+          <button class="real-filter" data-filter="signature" aria-pressed="false">Signature</button>
+          <button class="real-filter" data-filter="arena" aria-pressed="false">Arena</button>
+        </div>
+      </div>
+      <div class="real-viewport" id="realViewport">
+        <div class="real-track" id="realTrack"><!-- rempli par js/modules/gallery.js --></div>
+      </div>
+      <p class="real-hint" aria-hidden="true">Faites défiler pour explorer</p>
+    </section>
+
+    <!-- ===================== 9. CTA FINAL ===================== -->
+    <section class="cta-section" id="contact">
+      <div class="cta-light" aria-hidden="true"></div>
+      <div class="cta-inner">
+        <h2 class="cta-title">
+          <span class="line"><span class="line-in">Et si le prochain lieu de vie</span></span>
+          <span class="line"><span class="line-in">était chez vous&nbsp;?</span></span>
+        </h2>
+        <a class="btn btn-primary btn-xl" href="mailto:contact@airfit.fr?subject=Mon%20projet%20de%20plateau%20sportif">Imaginer mon projet</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== 10. FOOTER ===================== -->
+  <footer class="footer">
+    <p>Air<strong>Fit</strong> — Conception, fabrication et installation de plateaux sportifs&ensp;•&ensp;contact@airfit.fr&ensp;•&ensp;© 2026</p>
+  </footer>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
